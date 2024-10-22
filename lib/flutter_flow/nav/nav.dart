@@ -1,17 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -49,7 +44,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : NavBarPage(),
+          : const NavBarPage(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -67,46 +62,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : NavBarPage(),
+              : const NavBarPage(),
         ),
         FFRoute(
           name: 'Company',
           path: '/company',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Company')
-              : CompanyWidget(),
+              ? const NavBarPage(initialPage: 'Company')
+              : const CompanyWidget(),
         ),
         FFRoute(
           name: 'Search',
           path: '/search',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Search')
-              : SearchWidget(),
+              ? const NavBarPage(initialPage: 'Search')
+              : const SearchWidget(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home') : HomeWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Home') : const HomeWidget(),
         ),
         FFRoute(
           name: 'Settings',
           path: '/settings',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Settings')
-              : SettingsWidget(),
+              ? const NavBarPage(initialPage: 'Settings')
+              : const SettingsWidget(),
         ),
         FFRoute(
           name: 'Category',
           path: '/category',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Category')
-              : CategoryWidget(),
+              ? const NavBarPage(initialPage: 'Category')
+              : const CategoryWidget(),
         ),
         FFRoute(
           name: 'HomeSidebar',
           path: '/homeSidebar',
-          builder: (context, params) => HomeSidebarWidget(),
+          builder: (context, params) => const HomeSidebarWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -270,7 +265,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

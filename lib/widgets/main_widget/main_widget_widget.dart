@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'main_widget_model.dart';
 export 'main_widget_model.dart';
 
@@ -45,7 +44,7 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
       child: Container(
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -55,7 +54,7 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -104,7 +103,7 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                           _model.textController1Validator.asValidator(context),
                     ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -150,7 +149,7 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                           _model.textController2Validator.asValidator(context),
                     ),
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -173,26 +172,26 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                     color: FlutterFlowTheme.of(context).secondaryText,
                     size: 24.0,
                   ),
-                ].divide(SizedBox(width: 8.0)),
+                ].divide(const SizedBox(width: 8.0)),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
                   },
                   text: '',
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.search_sharp,
                     size: 28.0,
                   ),
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 47.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: Color(0xFF525017),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: const Color(0xFF525017),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).titleSmallFamily,
@@ -206,7 +205,7 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                   ),
                 ),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),

@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'filter_model.dart';
 export 'filter_model.dart';
 
@@ -39,7 +38,7 @@ class _FilterWidgetState extends State<FilterWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -47,7 +46,7 @@ class _FilterWidgetState extends State<FilterWidget> {
           borderRadius: BorderRadius.circular(12.0),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,7 +124,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '1',
@@ -171,7 +170,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '5',
@@ -217,7 +216,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '1',
@@ -263,7 +262,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '2',
@@ -309,7 +308,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '2',
@@ -355,7 +354,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '0',
@@ -374,7 +373,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                           ),
                         ],
                       ),
-                    ].divide(SizedBox(height: 4.0)),
+                    ].divide(const SizedBox(height: 4.0)),
                   ),
                   Text(
                     'Experience Level',
@@ -412,7 +411,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                           .bodyMediumFamily),
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Text(
                         '2',
@@ -458,7 +457,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '1',
@@ -504,7 +503,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '3',
@@ -550,7 +549,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '1',
@@ -596,7 +595,7 @@ class _FilterWidgetState extends State<FilterWidget> {
                                                   .bodyMediumFamily),
                                     ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
                             '3',
@@ -615,11 +614,11 @@ class _FilterWidgetState extends State<FilterWidget> {
                           ),
                         ],
                       ),
-                    ].divide(SizedBox(height: 4.0)),
+                    ].divide(const SizedBox(height: 4.0)),
                   ),
-                ].divide(SizedBox(height: 8.0)),
+                ].divide(const SizedBox(height: 8.0)),
               ),
-            ].divide(SizedBox(height: 16.0)),
+            ].divide(const SizedBox(height: 16.0)),
           ),
         ),
       ),
