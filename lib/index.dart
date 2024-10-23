@@ -5,3 +5,4 @@ export '/home/home_widget.dart' show HomeWidget;
 export '/settings/settings_widget.dart' show SettingsWidget;
 export '/category/category_widget.dart' show CategoryWidget;
 export '/home_sidebar/home_sidebar_widget.dart' show HomeSidebarWidget;
+export '/test/test_widget.dart' show TestWidget;
