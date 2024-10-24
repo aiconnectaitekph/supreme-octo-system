@@ -163,7 +163,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     '8io2e8w9': {
-      'en': 'Find Jobs',
+      'en': 'Filter Search',
+      'ar': '',
+      'ms': '',
+    },
+    'uicr3grn': {
+      'en': 'Technology-Software',
+      'ar': '',
+      'ms': '',
+    },
+    '9ur1k530': {
+      'en': 'Fullstack Web Developer',
+      'ar': '',
+      'ms': '',
+    },
+    'mxtpkwmt': {
+      'en': 'Kuantan',
+      'ar': '',
+      'ms': '',
+    },
+    '6rsv8wy7': {
+      'en': 'Internship',
+      'ar': '',
+      'ms': '',
+    },
+    'k3x99rho': {
+      'en': 'June 8, 2022 by',
+      'ar': '',
+      'ms': '',
+    },
+    '45w6ajyo': {
+      'en': 'Traveloka',
       'ar': '',
       'ms': '',
     },
@@ -185,63 +215,58 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': '',
       'ms': '',
     },
-    'rzxsbge0': {
-      'en': 'Popular Searches',
+    't3ixf6kt': {
+      'en': '4',
       'ar': '',
       'ms': '',
     },
-    '5golomjp': {
-      'en': 'Fullstack',
+    'uiciih9p': {
+      'en': '5',
       'ar': '',
       'ms': '',
     },
-    'hlbv5yo4': {
-      'en': 'Software',
+    '5r9o5xzv': {
+      'en': '6',
       'ar': '',
       'ms': '',
     },
-    'n5bylpag': {
-      'en': 'Singer',
+    '9g1j0mw2': {
+      'en': '7',
       'ar': '',
       'ms': '',
     },
-    'n2g5qogh': {
-      'en': 'Co-Pilot',
+    '05su9kdv': {
+      'en': '8',
       'ar': '',
       'ms': '',
     },
-    '30xju67h': {
-      'en': 'Engineer',
+    'md3vgupu': {
+      'en': '9',
       'ar': '',
       'ms': '',
     },
-    'dkovg2l0': {
-      'en': 'Flutter Developer',
+    'k6jceyf4': {
+      'en': '10',
       'ar': '',
       'ms': '',
     },
-    'o0hji1kk': {
-      'en': 'Fullstack Dev',
+    'mms4wmhu': {
+      'en': '11',
       'ar': '',
       'ms': '',
     },
-    'jwnxouu4': {
-      'en': 'Fullstack',
+    '8p37enhb': {
+      'en': '12',
       'ar': '',
       'ms': '',
     },
-    'hheb12zi': {
-      'en': 'Crew',
+    'f76cgtmq': {
+      'en': '13',
       'ar': '',
       'ms': '',
     },
-    't0drujtg': {
-      'en': 'Fullstack',
-      'ar': '',
-      'ms': '',
-    },
-    'ad1lctux': {
-      'en': 'Fullstack',
+    'p2njgwiq': {
+      'en': '14',
       'ar': '',
       'ms': '',
     },

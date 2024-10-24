@@ -89,9 +89,9 @@ class _HomeDashWidgetState extends State<HomeDashWidget>
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Container(
@@ -144,7 +144,7 @@ class _HomeDashWidgetState extends State<HomeDashWidget>
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).primaryBackground,
+                color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 12.0),

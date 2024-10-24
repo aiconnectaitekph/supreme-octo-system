@@ -46,7 +46,7 @@
         <string>explore.com</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>explore</string>
+        <string>http</string>
         </array>
         </dict>
     </array>

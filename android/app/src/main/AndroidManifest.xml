@@ -45,7 +45,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="explore" android:host="explore.com" />
+                <data android:scheme="http" android:host="explore.com" />
             </intent-filter>
 
         </activity>

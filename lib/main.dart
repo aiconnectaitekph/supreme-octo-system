@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
+import '/backend/sqlite/sqlite_manager.dart';
 import 'backend/firebase/firebase_config.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
@@ -15,6 +16,8 @@ void main() async {
   usePathUrlStrategy();
 
   await initFirebase();
+
+  await SQLiteManager.initialize();
 
   await FFLocalizations.initialize();
 
@@ -142,7 +145,7 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPage = null;
           _currentPageName = tabs.keys.toList()[i];
         }),
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         selectedItemColor: FlutterFlowTheme.of(context).primary,
         unselectedItemColor: const Color(0x6A482136),
         showSelectedLabels: false,
