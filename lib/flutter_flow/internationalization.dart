@@ -819,13 +819,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': '',
       'ms': '',
     },
-    'b5rsquzh': {
-      'en': 'First name',
-      'ar': '',
-      'ms': '',
-    },
     'a1nimg1v': {
-      'en': 'Last name',
+      'en': 'Company Name',
       'ar': '',
       'ms': '',
     },
@@ -865,6 +860,29 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     '6nsolhjb': {
+      'en': 'Home',
+      'ar': '',
+      'ms': '',
+    },
+  },
+  // Forgopassword
+  {
+    'b0sq6jlp': {
+      'en': 'Forgot Password',
+      'ar': '',
+      'ms': '',
+    },
+    'gdrodpr7': {
+      'en': 'Email address',
+      'ar': '',
+      'ms': '',
+    },
+    'ibdxdwo4': {
+      'en': 'Get new password',
+      'ar': '',
+      'ms': '',
+    },
+    't80rbspp': {
       'en': 'Home',
       'ar': '',
       'ms': '',
@@ -1286,6 +1304,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ma79zo7s': {
       'en': 'Sign in',
+      'ar': '',
+      'ms': '',
+    },
+  },
+  // forget
+  {
+    'ho48ucgd': {
+      'en': 'Forgot Password',
+      'ar': '',
+      'ms': '',
+    },
+    'l44v9ybf': {
+      'en': 'Email address',
+      'ar': '',
+      'ms': '',
+    },
+    'mbmyx6th': {
+      'en': 'Get new password',
       'ar': '',
       'ms': '',
     },

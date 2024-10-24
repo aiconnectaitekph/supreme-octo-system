@@ -17,10 +17,6 @@ class SignupcompanyModel extends FlutterFlowModel<SignupcompanyWidget> {
   FocusNode? textFieldFocusNode3;
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode4;
-  TextEditingController? textController4;
-  String? Function(BuildContext, String?)? textController4Validator;
   // State field(s) for Checkbox widget.
   bool? checkboxValue;
 
@@ -37,8 +33,5 @@ class SignupcompanyModel extends FlutterFlowModel<SignupcompanyWidget> {
 
     textFieldFocusNode3?.dispose();
     textController3?.dispose();
-
-    textFieldFocusNode4?.dispose();
-    textController4?.dispose();
   }
 }

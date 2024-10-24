@@ -115,6 +115,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Signupcompany',
           path: '/signupcompany',
           builder: (context, params) => const SignupcompanyWidget(),
+        ),
+        FFRoute(
+          name: 'Forgopassword',
+          path: '/forgopassword',
+          builder: (context, params) => const ForgopasswordWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

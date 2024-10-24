@@ -8,3 +8,4 @@ export '/home_dash/home_dash_widget.dart' show HomeDashWidget;
 export '/login/login_widget.dart' show LoginWidget;
 export '/signup/signup_widget.dart' show SignupWidget;
 export '/signupcompany/signupcompany_widget.dart' show SignupcompanyWidget;
+export '/forgopassword/forgopassword_widget.dart' show ForgopasswordWidget;
