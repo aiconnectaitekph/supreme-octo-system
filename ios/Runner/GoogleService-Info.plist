@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>869053244601-jllgmbje6l3t6r5fskag5igsuka8iqhe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.869053244601-jllgmbje6l3t6r5fskag5igsuka8iqhe</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>869053244601-2ucdbhk5p226604s0r9u4k9l1mig2b0j.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBDlxlA55IqGlxkKqAjqyy-BAJswIr5Y5o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>869053244601</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.exploremalaysia.job</string>
+	<key>PROJECT_ID</key>
+	<string>explore-malaysia-6d28d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>explore-malaysia-6d28d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:869053244601:ios:76f29625a0db480f0be768</string>
+	<key>DATABASE_URL</key>
+	<string>https://explore-malaysia-6d28d-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

@@ -103,7 +103,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              'Find the perfect job for you',
+                              FFLocalizations.of(context).getText(
+                                'cm46g5vg' /* Find the perfect job for you */,
+                              ),
                               textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -120,7 +122,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                   ),
                             ),
                             Text(
-                              'Search your career opportunity through 12,800 jobs',
+                              FFLocalizations.of(context).getText(
+                                'c389cgaw' /* Search your career opportunity... */,
+                              ),
                               textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -170,7 +174,11 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                           autofocus: false,
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            hintText: 'Job Title and Keyword',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'gcl9fo4f' /* Job Title and Keyword */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -237,7 +245,11 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                           autofocus: false,
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            hintText: 'Location',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '0ofk7gwu' /* Location */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -349,7 +361,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Text(
-                                            'Popular Searches',
+                                            FFLocalizations.of(context).getText(
+                                              'jkw1on2q' /* Popular Searches */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -385,7 +399,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'rlr029wy' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -430,7 +447,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'oq49i18e' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -475,7 +495,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'y1x4v6ve' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -520,7 +543,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'shw0aauy' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -574,7 +600,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'oz7g8wrb' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -619,7 +648,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                '6a7j7mw9' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -664,7 +696,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'i57zjkb8' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -709,7 +744,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                '1dqh16zd' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -760,7 +798,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             onPressed: () {
                                               print('Button pressed ...');
                                             },
-                                            text: 'Fullstack',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              '858wfl06' /* Fullstack */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 32.0,
                                               padding: const EdgeInsetsDirectional
@@ -803,7 +844,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             onPressed: () {
                                               print('Button pressed ...');
                                             },
-                                            text: 'Fullstack',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              '3456khz5' /* Fullstack */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 32.0,
                                               padding: const EdgeInsetsDirectional
@@ -846,7 +890,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             onPressed: () {
                                               print('Button pressed ...');
                                             },
-                                            text: 'Fullstack',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              'y38sw1ol' /* Fullstack */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 32.0,
                                               padding: const EdgeInsetsDirectional
@@ -889,7 +936,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             onPressed: () {
                                               print('Button pressed ...');
                                             },
-                                            text: 'Fullstack',
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              'ee9xufoc' /* Fullstack */,
+                                            ),
                                             options: FFButtonOptions(
                                               height: 32.0,
                                               padding: const EdgeInsetsDirectional
@@ -948,7 +998,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                         child: Text(
-                          'Popular Today',
+                          FFLocalizations.of(context).getText(
+                            'e14aaut3' /* Popular Today */,
+                          ),
                           style: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
@@ -1018,7 +1070,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'HSBC is getting back into consumer lending in the us according to...',
+                                            FFLocalizations.of(context).getText(
+                                              'z3gbsar4' /* HSBC is getting back into cons... */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -1047,7 +1101,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 12.0, 0.0),
                                                   child: Text(
-                                                    'Jackson Hewiit',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'ejokc4hx' /* Jackson Hewiit */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1084,7 +1141,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 16.0, 0.0),
                                                   child: Text(
-                                                    '24',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'v6si2hgp' /* 24 */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1105,7 +1165,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 ),
                                                 Expanded(
                                                   child: Text(
-                                                    '12h',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '2ms10547' /* 12h */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1145,7 +1208,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 12.0, 0.0),
                                             child: Text(
-                                              'Read Now',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'hf63fh6t' /* Read Now */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -1223,7 +1289,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'HSBC is getting back into consumer lending in the us according to...',
+                                            FFLocalizations.of(context).getText(
+                                              'v1jm0r5i' /* HSBC is getting back into cons... */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -1252,7 +1320,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 12.0, 0.0),
                                                   child: Text(
-                                                    'Jackson Hewiit',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '7vncsz4l' /* Jackson Hewiit */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1289,7 +1360,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 16.0, 0.0),
                                                   child: Text(
-                                                    '24',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'jscwzy0b' /* 24 */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1310,7 +1384,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 ),
                                                 Expanded(
                                                   child: Text(
-                                                    '12h',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'll7j8py3' /* 12h */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1350,7 +1427,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 12.0, 0.0),
                                             child: Text(
-                                              'Read Now',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'yk9h96id' /* Read Now */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -1428,7 +1508,9 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'HSBC is getting back into consumer lending in the us according to...',
+                                            FFLocalizations.of(context).getText(
+                                              'khz01xgq' /* HSBC is getting back into cons... */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyLarge
                                                 .override(
@@ -1457,7 +1539,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 12.0, 0.0),
                                                   child: Text(
-                                                    'Jackson Hewiit',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'b0ji3tfy' /* Jackson Hewiit */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1494,7 +1579,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                       .fromSTEB(
                                                           0.0, 0.0, 16.0, 0.0),
                                                   child: Text(
-                                                    '24',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'ewppnkiq' /* 24 */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1515,7 +1603,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 ),
                                                 Expanded(
                                                   child: Text(
-                                                    '12h',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'ch6jidbe' /* 12h */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .labelSmall
@@ -1555,7 +1646,10 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 8.0, 12.0, 0.0),
                                             child: Text(
-                                              'Read Now',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'zsl8v67t' /* Read Now */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall

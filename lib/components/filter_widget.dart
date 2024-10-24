@@ -56,7 +56,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Filter Jobs',
+                    FFLocalizations.of(context).getText(
+                      '7z75kfmv' /* Filter Jobs */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineSmall.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).headlineSmallFamily,
@@ -84,7 +86,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Type of Employment',
+                    FFLocalizations.of(context).getText(
+                      '6ye4lmkw' /* Type of Employment */,
+                    ),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).titleSmallFamily,
@@ -111,7 +115,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Contract',
+                                FFLocalizations.of(context).getText(
+                                  'n2tvtuno' /* Contract */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -127,7 +133,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '1',
+                            FFLocalizations.of(context).getText(
+                              '41c2ngen' /* 1 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -157,7 +165,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Full Time',
+                                FFLocalizations.of(context).getText(
+                                  'h9k9wnv2' /* Full Time */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -173,7 +183,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '5',
+                            FFLocalizations.of(context).getText(
+                              '8gworghe' /* 5 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -203,7 +215,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Internship',
+                                FFLocalizations.of(context).getText(
+                                  'bgds2dbi' /* Internship */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -219,7 +233,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '1',
+                            FFLocalizations.of(context).getText(
+                              'p0wxgn8q' /* 1 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -249,7 +265,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Part Time',
+                                FFLocalizations.of(context).getText(
+                                  '2q2aibkz' /* Part Time */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -265,7 +283,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '2',
+                            FFLocalizations.of(context).getText(
+                              'sr36nq1w' /* 2 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -295,7 +315,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Remote',
+                                FFLocalizations.of(context).getText(
+                                  'dp337jqu' /* Remote */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -311,7 +333,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '2',
+                            FFLocalizations.of(context).getText(
+                              '6ix5icxn' /* 2 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -341,7 +365,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Training',
+                                FFLocalizations.of(context).getText(
+                                  'vuzts6kl' /* Training */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -357,7 +383,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '0',
+                            FFLocalizations.of(context).getText(
+                              '1oipfil2' /* 0 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -376,7 +404,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                     ].divide(const SizedBox(height: 4.0)),
                   ),
                   Text(
-                    'Experience Level',
+                    FFLocalizations.of(context).getText(
+                      '0oofg38x' /* Experience Level */,
+                    ),
                     style: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).titleSmallFamily,
@@ -399,7 +429,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             size: 24.0,
                           ),
                           Text(
-                            'Entry-Level',
+                            FFLocalizations.of(context).getText(
+                              '9zggo0wu' /* Entry-Level */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -414,7 +446,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                         ].divide(const SizedBox(width: 8.0)),
                       ),
                       Text(
-                        '2',
+                        FFLocalizations.of(context).getText(
+                          'n3ab1l4z' /* 2 */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily:
                                   FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -444,7 +478,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Manager / Executive',
+                                FFLocalizations.of(context).getText(
+                                  '3kaj1wqg' /* Manager / Executive */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -460,7 +496,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '1',
+                            FFLocalizations.of(context).getText(
+                              'eldm6cwj' /* 1 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -490,7 +528,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Mid-Level',
+                                FFLocalizations.of(context).getText(
+                                  '8t3h03wm' /* Mid-Level */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -506,7 +546,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '3',
+                            FFLocalizations.of(context).getText(
+                              'u2fn5e5o' /* 3 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -536,7 +578,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'No Experience',
+                                FFLocalizations.of(context).getText(
+                                  'gc500yfa' /* No Experience */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -552,7 +596,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '1',
+                            FFLocalizations.of(context).getText(
+                              '6a3hnkgq' /* 1 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -582,7 +628,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                                 size: 24.0,
                               ),
                               Text(
-                                'Senior-Level',
+                                FFLocalizations.of(context).getText(
+                                  'suvk69cr' /* Senior-Level */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -598,7 +646,9 @@ class _FilterWidgetState extends State<FilterWidget> {
                             ].divide(const SizedBox(width: 8.0)),
                           ),
                           Text(
-                            '3',
+                            FFLocalizations.of(context).getText(
+                              'xz0ol748' /* 3 */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(

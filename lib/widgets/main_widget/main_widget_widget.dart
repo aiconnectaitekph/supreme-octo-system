@@ -74,7 +74,9 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                       autofocus: false,
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: 'Job Title and Keyword',
+                        hintText: FFLocalizations.of(context).getText(
+                          '7zldgoa8' /* Job Title and Keyword */,
+                        ),
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodyMedium
                             .override(
@@ -121,7 +123,9 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                       autofocus: false,
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: 'Location',
+                        hintText: FFLocalizations.of(context).getText(
+                          '0ps63ddh' /* Location */,
+                        ),
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodyMedium
                             .override(
@@ -157,7 +161,9 @@ class _MainWidgetWidgetState extends State<MainWidgetWidget> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'All Categories',
+                    FFLocalizations.of(context).getText(
+                      'sdsaaw6g' /* All Categories */,
+                    ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily:
                               FlutterFlowTheme.of(context).bodyMediumFamily,

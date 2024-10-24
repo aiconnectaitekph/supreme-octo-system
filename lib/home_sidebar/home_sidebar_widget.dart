@@ -115,7 +115,9 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              'Find the perfect job for you',
+                              FFLocalizations.of(context).getText(
+                                'e99e9r9k' /* Find the perfect job for you */,
+                              ),
                               textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -132,7 +134,9 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                   ),
                             ),
                             Text(
-                              'Search your career opportunity through 12,800 jobs',
+                              FFLocalizations.of(context).getText(
+                                '8pykxn68' /* Search your career opportunity... */,
+                              ),
                               textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -189,7 +193,10 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                               obscureText: false,
                                               decoration: InputDecoration(
                                                 hintText:
-                                                    'Job Title and Keyword',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '7odvgacx' /* Job Title and Keyword */,
+                                                ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -259,7 +266,11 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                               autofocus: false,
                                               obscureText: false,
                                               decoration: InputDecoration(
-                                                hintText: 'Location',
+                                                hintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'kxrzs4sq' /* Location */,
+                                                ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium

@@ -62,7 +62,9 @@ class _CategogryListWidgetState extends State<CategogryListWidget> {
                 size: 48.0,
               ),
               Text(
-                'Construction',
+                FFLocalizations.of(context).getText(
+                  'a3b9v12n' /* Construction */,
+                ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).titleMedium.override(
                       fontFamily:
@@ -73,7 +75,9 @@ class _CategogryListWidgetState extends State<CategogryListWidget> {
                     ),
               ),
               Text(
-                '0 open positions',
+                FFLocalizations.of(context).getText(
+                  'fnqcry38' /* 0 open positions */,
+                ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).bodySmall.override(
                       fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,

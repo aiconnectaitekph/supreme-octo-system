@@ -54,7 +54,9 @@ class _FilterHeadWidgetState extends State<FilterHeadWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'Filter Jobs',
+              FFLocalizations.of(context).getText(
+                '7bpiw8bi' /* Filter Jobs */,
+              ),
               style: FlutterFlowTheme.of(context).headlineSmall.override(
                     fontFamily:
                         FlutterFlowTheme.of(context).headlineSmallFamily,

@@ -1,35 +1,79 @@
-import '/flutter_flow/flutter_flow_drop_down.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/form_field_controller.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart'
+    as smooth_page_indicator;
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'category_model.dart';
-export 'category_model.dart';
+import 'home_dash_model.dart';
+export 'home_dash_model.dart';
 
-class CategoryWidget extends StatefulWidget {
-  const CategoryWidget({super.key});
+class HomeDashWidget extends StatefulWidget {
+  const HomeDashWidget({super.key});
 
   @override
-  State<CategoryWidget> createState() => _CategoryWidgetState();
+  State<HomeDashWidget> createState() => _HomeDashWidgetState();
 }
 
-class _CategoryWidgetState extends State<CategoryWidget> {
-  late CategoryModel _model;
+class _HomeDashWidgetState extends State<HomeDashWidget>
+    with TickerProviderStateMixin {
+  late HomeDashModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CategoryModel());
+    _model = createModel(context, () => HomeDashModel());
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 
     _model.textController2 ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
+
+    animationsMap.addAll({
+      'imageOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1230.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1320.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -47,7 +91,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
           actions: [
             Container(
@@ -69,13 +113,22 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/Screenshot_from_2024-10-16_16-44-06.png',
-                        width: 32.0,
-                        height: 32.0,
-                        fit: BoxFit.contain,
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        Navigator.pop(context);
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/Screenshot_from_2024-10-16_16-31-53.png',
+                          width: 32.0,
+                          height: 32.0,
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ],
@@ -90,13 +143,16 @@ class _CategoryWidgetState extends State<CategoryWidget> {
           child: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                color: FlutterFlowTheme.of(context).primaryBackground,
+              ),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 12.0),
                 child: SingleChildScrollView(
                   primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
@@ -104,44 +160,35 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Text(
-                              FFLocalizations.of(context).getText(
-                                'jxhmwu4n' /* Find the perfect job for you */,
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24.0),
+                                border: Border.all(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
                               ),
-                              textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    fontSize: 32.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w800,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(24.0),
+                                child: Image.asset(
+                                  'assets/images/Screenshot_from_2024-10-23_12-59-48.png',
+                                  width: MediaQuery.sizeOf(context).width * 1.0,
+                                  height: 200.0,
+                                  fit: BoxFit.cover,
+                                ),
+                              ).animateOnPageLoad(
+                                  animationsMap['imageOnPageLoadAnimation']!),
                             ),
-                            Text(
-                              FFLocalizations.of(context).getText(
-                                '5b387kwh' /* Search your career opportunity... */,
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24.0),
+                                border: Border.all(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
                               ),
-                              textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.normal,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                            ),
+                            ).animateOnPageLoad(animationsMap[
+                                'containerOnPageLoadAnimation1']!),
                           ],
                         ),
                       ),
@@ -169,12 +216,6 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Icon(
-                                        Icons.search_rounded,
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
-                                        size: 24.0,
-                                      ),
                                       Expanded(
                                         child: TextFormField(
                                           controller: _model.textController1,
@@ -185,7 +226,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'hy5rkpsk' /* Job Title and Keyword */,
+                                              'zzghgwlb' /* Job Title and Keyword */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -256,7 +297,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              '1pdk357c' /* Location */,
+                                              'kouivnzd' /* Location */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -305,113 +346,44 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                       ),
                                     ].divide(const SizedBox(width: 8.0)),
                                   ),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      FlutterFlowDropDown<String>(
-                                        controller: _model
-                                                .dropDownValueController ??=
-                                            FormFieldController<String>(null),
-                                        options: [
-                                          FFLocalizations.of(context).getText(
-                                            'pzww898w' /* Option 1 */,
+                                  FFButtonWidget(
+                                    onPressed: () {
+                                      print('Button pressed ...');
+                                    },
+                                    text: '',
+                                    icon: const Icon(
+                                      Icons.search_sharp,
+                                      size: 28.0,
+                                    ),
+                                    options: FFButtonOptions(
+                                      width: double.infinity,
+                                      height: 50.0,
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 0.0),
+                                      iconPadding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: const Color(0xFF525017),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmallFamily,
+                                            color: Colors.white,
+                                            letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmallFamily),
                                           ),
-                                          FFLocalizations.of(context).getText(
-                                            'xvodtlaj' /* Option 2 */,
-                                          ),
-                                          FFLocalizations.of(context).getText(
-                                            'wt9b9v88' /* Option 3 */,
-                                          )
-                                        ],
-                                        onChanged: (val) => safeSetState(
-                                            () => _model.dropDownValue = val),
-                                        width: 333.0,
-                                        height: 52.0,
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
-                                            ),
-                                        hintText:
-                                            FFLocalizations.of(context).getText(
-                                          'hsras2rk' /*  Select Category... */,
-                                        ),
-                                        icon: Icon(
-                                          Icons.keyboard_arrow_down_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          size: 24.0,
-                                        ),
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        elevation: 2.0,
-                                        borderColor: Colors.transparent,
-                                        borderWidth: 0.0,
-                                        borderRadius: 8.0,
-                                        margin: const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 0.0, 12.0, 0.0),
-                                        hidesUnderline: true,
-                                        isOverButton: false,
-                                        isSearchable: false,
-                                        isMultiSelect: false,
-                                      ),
-                                    ].divide(const SizedBox(width: 8.0)),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 6.0, 0.0, 0.0),
-                                    child: FFButtonWidget(
-                                      onPressed: () {
-                                        print('Button pressed ...');
-                                      },
-                                      text: FFLocalizations.of(context).getText(
-                                        'unjk5ods' /* Category */,
-                                      ),
-                                      icon: const Icon(
-                                        Icons.search_sharp,
-                                        size: 28.0,
-                                      ),
-                                      options: FFButtonOptions(
-                                        width: double.infinity,
-                                        height: 50.0,
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
-                                        iconPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xFF525017),
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily,
-                                              color: Colors.white,
-                                              letterSpacing: 0.0,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily),
-                                            ),
-                                        elevation: 0.0,
-                                        borderRadius:
-                                            BorderRadius.circular(24.0),
-                                      ),
+                                      elevation: 0.0,
+                                      borderRadius: BorderRadius.circular(24.0),
+                                      hoverColor: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      hoverTextColor:
+                                          FlutterFlowTheme.of(context)
+                                              .primaryBackground,
                                     ),
                                   ),
                                 ].divide(const SizedBox(height: 16.0)),
@@ -419,59 +391,62 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                             ),
                           ),
                         ),
-                      ),
+                      ).animateOnPageLoad(
+                          animationsMap['containerOnPageLoadAnimation2']!),
                       Container(
                         decoration: const BoxDecoration(),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Container(
-                              height: 205.0,
-                              decoration: const BoxDecoration(),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 20.0, 0.0, 0.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 6.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              '9mx5wify' /* All Categories */,
+                        child: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Container(
+                                height: 205.0,
+                                decoration: const BoxDecoration(),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 25.0, 0.0, 0.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 6.0),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'c5aflg3c' /* Popular Searches */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        fontSize: 16.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  fontSize: 16.0,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w600,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 10.0, 0.0, 6.0),
-                                      child: SingleChildScrollView(
-                                        scrollDirection: Axis.horizontal,
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 10.0, 0.0, 10.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -487,7 +462,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  '3al4a7t1' /* Fullstack */,
+                                                  'rbkz3u6o' /* Fullstack */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -537,7 +512,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  '9t0n1o8a' /* Fullstack */,
+                                                  'qrcv5sox' /* Software */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -587,7 +562,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'o78oqmvy' /* Fullstack */,
+                                                  '8rmr3xbl' /* Singer */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -637,7 +612,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'n7fdth82' /* Fullstack */,
+                                                  'ucowcezf' /* Co-Pilot */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -680,14 +655,11 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                           ],
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 6.0),
-                                      child: SingleChildScrollView(
-                                        scrollDirection: Axis.horizontal,
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 10.0),
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
@@ -701,7 +673,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  '46a3cco9' /* Fullstack */,
+                                                  'n5f286w1' /* Engineer */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -751,7 +723,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'np0vviz9' /* Fullstack */,
+                                                  'qnoojagu' /* Flutter Developer */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -801,57 +773,7 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                                 text:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'jd4jf2fo' /* Fullstack */,
-                                                ),
-                                                options: FFButtonOptions(
-                                                  height: 32.0,
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          16.0, 0.0, 16.0, 0.0),
-                                                  iconPadding:
-                                                      const EdgeInsetsDirectional
-                                                          .fromSTEB(0.0, 0.0,
-                                                              0.0, 0.0),
-                                                  color: const Color(0xFF040409),
-                                                  textStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .override(
-                                                            fontFamily:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily,
-                                                            color: Colors.white,
-                                                            fontSize: 12.0,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.w300,
-                                                            useGoogleFonts: GoogleFonts
-                                                                    .asMap()
-                                                                .containsKey(
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmallFamily),
-                                                          ),
-                                                  elevation: 0.0,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          24.0),
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 8.0, 0.0),
-                                              child: FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
-                                                },
-                                                text:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'to1o7sle' /* Fullstack */,
+                                                  '9x6evnop' /* Fullstack Dev */,
                                                 ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
@@ -894,213 +816,320 @@ class _CategoryWidgetState extends State<CategoryWidget> {
                                           ],
                                         ),
                                       ),
-                                    ),
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 0.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () {
-                                              print('Button pressed ...');
-                                            },
-                                            text: FFLocalizations.of(context)
-                                                .getText(
-                                              'al6by9q4' /* Fullstack */,
-                                            ),
-                                            options: FFButtonOptions(
-                                              height: 32.0,
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: const Color(0xFF040409),
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        fontSize: 12.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                              elevation: 0.0,
-                                              borderRadius:
-                                                  BorderRadius.circular(24.0),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 0.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () {
-                                              print('Button pressed ...');
-                                            },
-                                            text: FFLocalizations.of(context)
-                                                .getText(
-                                              'ydcr87mb' /* Fullstack */,
-                                            ),
-                                            options: FFButtonOptions(
-                                              height: 32.0,
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: const Color(0xFF040409),
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        fontSize: 12.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                              elevation: 0.0,
-                                              borderRadius:
-                                                  BorderRadius.circular(24.0),
+                                      Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 8.0, 0.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () {
+                                                print('Button pressed ...');
+                                              },
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'xuz3pr68' /* Fullstack */,
+                                              ),
+                                              options: FFButtonOptions(
+                                                height: 32.0,
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 16.0, 0.0),
+                                                iconPadding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: const Color(0xFF040409),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          fontSize: 12.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                                elevation: 0.0,
+                                                borderRadius:
+                                                    BorderRadius.circular(24.0),
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 0.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () {
-                                              print('Button pressed ...');
-                                            },
-                                            text: FFLocalizations.of(context)
-                                                .getText(
-                                              'eu4s0pvf' /* Fullstack */,
-                                            ),
-                                            options: FFButtonOptions(
-                                              height: 32.0,
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: const Color(0xFF040409),
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        fontSize: 12.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                              elevation: 0.0,
-                                              borderRadius:
-                                                  BorderRadius.circular(24.0),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 0.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () {
-                                              print('Button pressed ...');
-                                            },
-                                            text: FFLocalizations.of(context)
-                                                .getText(
-                                              'ew2t2z60' /* Fullstack */,
-                                            ),
-                                            options: FFButtonOptions(
-                                              height: 32.0,
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: const Color(0xFF040409),
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmallFamily,
-                                                        color: Colors.white,
-                                                        fontSize: 12.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmallFamily),
-                                                      ),
-                                              elevation: 0.0,
-                                              borderRadius:
-                                                  BorderRadius.circular(24.0),
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 8.0, 0.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () {
+                                                print('Button pressed ...');
+                                              },
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'c5y7nlgb' /* Crew */,
+                                              ),
+                                              options: FFButtonOptions(
+                                                height: 32.0,
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 16.0, 0.0),
+                                                iconPadding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: const Color(0xFF040409),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          fontSize: 12.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                                elevation: 0.0,
+                                                borderRadius:
+                                                    BorderRadius.circular(24.0),
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 8.0, 0.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () {
+                                                print('Button pressed ...');
+                                              },
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'pumaf2ef' /* Fullstack */,
+                                              ),
+                                              options: FFButtonOptions(
+                                                height: 32.0,
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 16.0, 0.0),
+                                                iconPadding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: const Color(0xFF040409),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          fontSize: 12.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                                elevation: 0.0,
+                                                borderRadius:
+                                                    BorderRadius.circular(24.0),
+                                              ),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 8.0, 0.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () {
+                                                print('Button pressed ...');
+                                              },
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'sjpk4g11' /* Fullstack */,
+                                              ),
+                                              options: FFButtonOptions(
+                                                height: 32.0,
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 16.0, 0.0),
+                                                iconPadding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: const Color(0xFF040409),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmallFamily,
+                                                          color: Colors.white,
+                                                          fontSize: 12.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w300,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmallFamily),
+                                                        ),
+                                                elevation: 0.0,
+                                                borderRadius:
+                                                    BorderRadius.circular(24.0),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        decoration: const BoxDecoration(),
-                      ),
-                      Container(
-                        decoration: const BoxDecoration(),
                       ),
                       Divider(
                         height: 8.0,
                         thickness: 1.0,
                         color: FlutterFlowTheme.of(context).alternate,
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: SizedBox(
+                              width: double.infinity,
+                              height: 281.0,
+                              child: Stack(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 40.0),
+                                    child: PageView(
+                                      controller: _model.pageViewController ??=
+                                          PageController(initialPage: 2),
+                                      scrollDirection: Axis.horizontal,
+                                      children: [
+                                        ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(24.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                              ),
+                                            ),
+                                            child: ClipRRect(
+                                              child: Container(
+                                                decoration: const BoxDecoration(),
+                                                child: ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  child: Image.network(
+                                                    'https://picsum.photos/seed/864/600',
+                                                    width: 200.0,
+                                                    height: 200.0,
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        const Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [],
+                                        ),
+                                        const Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 16.0),
+                                      child: smooth_page_indicator
+                                          .SmoothPageIndicator(
+                                        controller:
+                                            _model.pageViewController ??=
+                                                PageController(initialPage: 2),
+                                        count: 3,
+                                        axisDirection: Axis.horizontal,
+                                        onDotClicked: (i) async {
+                                          await _model.pageViewController!
+                                              .animateToPage(
+                                            i,
+                                            duration:
+                                                const Duration(milliseconds: 500),
+                                            curve: Curves.ease,
+                                          );
+                                          safeSetState(() {});
+                                        },
+                                        effect:
+                                            smooth_page_indicator.SlideEffect(
+                                          spacing: 8.0,
+                                          radius: 8.0,
+                                          dotWidth: 8.0,
+                                          dotHeight: 8.0,
+                                          dotColor: FlutterFlowTheme.of(context)
+                                              .accent1,
+                                          activeDotColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          paintStyle: PaintingStyle.fill,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

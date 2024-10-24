@@ -68,7 +68,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                       size: 24.0,
                     ),
                     Text(
-                      'Technology-Software',
+                      FFLocalizations.of(context).getText(
+                        'rk6c12p6' /* Technology-Software */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -85,7 +87,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                   color: FlutterFlowTheme.of(context).secondaryText,
                 ),
                 Text(
-                  'Fullstack Web Developer',
+                  FFLocalizations.of(context).getText(
+                    'yomyr2rs' /* Fullstack Web Developer */,
+                  ),
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).headlineSmallFamily,
@@ -104,7 +108,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                       size: 16.0,
                     ),
                     Text(
-                      'Kuantan',
+                      FFLocalizations.of(context).getText(
+                        '5gwqosnb' /* Kuantan */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -114,7 +120,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                           ),
                     ),
                     Text(
-                      'Internship',
+                      FFLocalizations.of(context).getText(
+                        'w0jbhrv7' /* Internship */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -127,7 +135,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                   ].divide(const SizedBox(width: 16.0)),
                 ),
                 Text(
-                  'June 8, 2022 by',
+                  FFLocalizations.of(context).getText(
+                    'w7gymy73' /* June 8, 2022 by */,
+                  ),
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).bodySmallFamily,
@@ -142,7 +152,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Traveloka',
+                      FFLocalizations.of(context).getText(
+                        'nkfnelgu' /* Traveloka */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,

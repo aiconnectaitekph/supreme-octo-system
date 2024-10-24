@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'auth/firebase_auth/firebase_user_provider.dart';
-import 'auth/firebase_auth/auth_util.dart';
-
 import 'backend/firebase/firebase_config.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
+import 'flutter_flow/internationalization.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'index.dart';
 
 void main() async {
@@ -16,6 +15,8 @@ void main() async {
   usePathUrlStrategy();
 
   await initFirebase();
+
+  await FFLocalizations.initialize();
 
   runApp(const MyApp());
 }
@@ -32,12 +33,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  Locale? _locale = FFLocalizations.getStoredLocale();
+
   ThemeMode _themeMode = ThemeMode.system;
 
   late AppStateNotifier _appStateNotifier;
   late GoRouter _router;
 
-  late Stream<BaseAuthUser> userStream;
+  bool displaySplashImage = true;
 
   @override
   void initState() {
@@ -45,15 +48,14 @@ class _MyAppState extends State<MyApp> {
 
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier);
-    userStream = exploreFirebaseUserStream()
-      ..listen((user) {
-        _appStateNotifier.update(user);
-      });
-    jwtTokenStream.listen((_) {});
-    Future.delayed(
-      const Duration(milliseconds: 3000),
-      () => _appStateNotifier.stopShowingSplashImage(),
-    );
+
+    Future.delayed(const Duration(milliseconds: 3000),
+        () => safeSetState(() => _appStateNotifier.stopShowingSplashImage()));
+  }
+
+  void setLocale(String language) {
+    safeSetState(() => _locale = createLocale(language));
+    FFLocalizations.storeLocale(language);
   }
 
   void setThemeMode(ThemeMode mode) => safeSetState(() {
@@ -65,11 +67,19 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp.router(
       title: 'Explore',
       localizationsDelegates: const [
+        FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
+        FallbackMaterialLocalizationDelegate(),
+        FallbackCupertinoLocalizationDelegate(),
       ],
-      supportedLocales: const [Locale('en', '')],
+      locale: _locale,
+      supportedLocales: const [
+        Locale('en'),
+        Locale('ar'),
+        Locale('ms'),
+      ],
       theme: ThemeData(
         brightness: Brightness.light,
         scrollbarTheme: ScrollbarThemeData(
@@ -104,7 +114,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Search';
+  String _currentPageName = 'Home';
   late Widget? _currentPage;
 
   @override
@@ -119,7 +129,6 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'Home': const HomeWidget(),
       'Search': const SearchWidget(),
-      'Company': const CompanyWidget(),
       'Category': const CategoryWidget(),
       'Settings': const SettingsWidget(),
     };
@@ -135,49 +144,49 @@ class _NavBarPageState extends State<NavBarPage> {
         }),
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         selectedItemColor: FlutterFlowTheme.of(context).primary,
-        unselectedItemColor: FlutterFlowTheme.of(context).secondaryText,
+        unselectedItemColor: const Color(0x6A482136),
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: const Icon(
               Icons.home_filled,
               size: 24.0,
             ),
-            label: 'Home',
+            label: FFLocalizations.of(context).getText(
+              '5fwhls73' /* Home */,
+            ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: const Icon(
               Icons.search_rounded,
               size: 24.0,
             ),
-            label: 'Home',
+            label: FFLocalizations.of(context).getText(
+              'bp9qhsay' /* Home */,
+            ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.corporate_fare,
+            icon: const FaIcon(
+              FontAwesomeIcons.list,
               size: 24.0,
             ),
-            label: 'Home',
+            label: FFLocalizations.of(context).getText(
+              'v0yh62na' /* Category */,
+            ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.category,
+            icon: const Icon(
+              Icons.settings_rounded,
               size: 24.0,
             ),
-            label: 'Category',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.co_present,
-              size: 24.0,
+            label: FFLocalizations.of(context).getText(
+              'eenlus7r' /* Home */,
             ),
-            label: 'Home',
             tooltip: '',
           )
         ],

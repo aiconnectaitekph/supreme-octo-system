@@ -56,7 +56,9 @@ class _LayWidgetState extends State<LayWidget> {
               size: 40.0,
             ),
             Text(
-              'Business Development',
+              FFLocalizations.of(context).getText(
+                'kp12dqli' /* Business Development */,
+              ),
               style: FlutterFlowTheme.of(context).titleMedium.override(
                     fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
                     color: FlutterFlowTheme.of(context).primaryBackground,
@@ -66,7 +68,9 @@ class _LayWidgetState extends State<LayWidget> {
                   ),
             ),
             Text(
-              '1 open positions',
+              FFLocalizations.of(context).getText(
+                'qrqvd1vo' /* 1 open positions */,
+              ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                     color: FlutterFlowTheme.of(context).primaryBackground,

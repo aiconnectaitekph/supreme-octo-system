@@ -59,7 +59,9 @@ class _T1WidgetState extends State<T1Widget> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Filter Jobs',
+                  FFLocalizations.of(context).getText(
+                    'zoq3bbjq' /* Filter Jobs */,
+                  ),
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
                         fontFamily:
                             FlutterFlowTheme.of(context).headlineSmallFamily,
@@ -98,7 +100,9 @@ class _T1WidgetState extends State<T1Widget> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Types of Employment',
+                      FFLocalizations.of(context).getText(
+                        'sqf2uy3h' /* Types of Employment */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -109,11 +113,19 @@ class _T1WidgetState extends State<T1Widget> {
                           ),
                     ),
                     FlutterFlowChoiceChips(
-                      options: const [
-                        ChipData('Full-time'),
-                        ChipData('Part-time'),
-                        ChipData('Contract'),
-                        ChipData('Internship')
+                      options: [
+                        ChipData(FFLocalizations.of(context).getText(
+                          'tir09l8m' /* Full-time */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          'ljf6yqjd' /* Part-time */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          '0dt8x87u' /* Contract */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          'iengifc5' /* Internship */,
+                        ))
                       ],
                       onChanged: (val) => safeSetState(
                           () => _model.choiceChipsValue1 = val?.firstOrNull),
@@ -176,7 +188,9 @@ class _T1WidgetState extends State<T1Widget> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Experience Level',
+                      FFLocalizations.of(context).getText(
+                        'fj57bili' /* Experience Level */,
+                      ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
                                 FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -187,11 +201,19 @@ class _T1WidgetState extends State<T1Widget> {
                           ),
                     ),
                     FlutterFlowChoiceChips(
-                      options: const [
-                        ChipData('Entry Level'),
-                        ChipData('Mid Level'),
-                        ChipData('Senior Level'),
-                        ChipData('Executive')
+                      options: [
+                        ChipData(FFLocalizations.of(context).getText(
+                          '7trz8p05' /* Entry Level */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          'yyi0wlfv' /* Mid Level */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          'hcohmlnm' /* Senior Level */,
+                        )),
+                        ChipData(FFLocalizations.of(context).getText(
+                          'grhgj31p' /* Executive */,
+                        ))
                       ],
                       onChanged: (val) => safeSetState(
                           () => _model.choiceChipsValue2 = val?.firstOrNull),

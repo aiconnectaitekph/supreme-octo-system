@@ -130,7 +130,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                         autofocus: false,
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          hintText: 'Job Title and Keyword',
+                                          hintText: FFLocalizations.of(context)
+                                              .getText(
+                                            'n2uz9xy0' /* Job Title and Keyword */,
+                                          ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
@@ -193,7 +196,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                                         autofocus: false,
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          hintText: 'Location',
+                                          hintText: FFLocalizations.of(context)
+                                              .getText(
+                                            'unyszpsa' /* Location */,
+                                          ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
@@ -242,7 +248,9 @@ class _SearchWidgetState extends State<SearchWidget> {
                                   onPressed: () {
                                     print('Button pressed ...');
                                   },
-                                  text: 'Find Jobs',
+                                  text: FFLocalizations.of(context).getText(
+                                    'm0ltebkw' /* Find Jobs */,
+                                  ),
                                   icon: const Icon(
                                     Icons.search_sharp,
                                     size: 28.0,
@@ -302,7 +310,9 @@ class _SearchWidgetState extends State<SearchWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Find Jobs',
+                                    FFLocalizations.of(context).getText(
+                                      '8io2e8w9' /* Find Jobs */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
                                         .override(

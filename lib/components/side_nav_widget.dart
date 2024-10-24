@@ -77,7 +77,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        'check.io',
+                        FFLocalizations.of(context).getText(
+                          'ml1oirxz' /* check.io */,
+                        ),
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
@@ -116,7 +118,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Search',
+                            FFLocalizations.of(context).getText(
+                              '2c5i3eem' /* Search */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -157,7 +161,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Dashboard',
+                            FFLocalizations.of(context).getText(
+                              'j08ii8qw' /* Dashboard */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyLarge
                                 .override(
@@ -198,7 +204,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Customers',
+                            FFLocalizations.of(context).getText(
+                              'i7fdxgzp' /* Customers */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -239,7 +247,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Contracts',
+                            FFLocalizations.of(context).getText(
+                              '5ccqjvwz' /* Contracts */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -280,7 +290,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'My Team',
+                            FFLocalizations.of(context).getText(
+                              'c9abts2c' /* My Team */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -321,7 +333,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Profile',
+                            FFLocalizations.of(context).getText(
+                              'i9ki4kh3' /* Profile */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -394,7 +408,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Andrew D.',
+                                      FFLocalizations.of(context).getText(
+                                        '3ortdhl2' /* Andrew D. */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
@@ -412,7 +428,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Text(
-                                        'admin@gmail.com',
+                                        FFLocalizations.of(context).getText(
+                                          'tu6e9ho4' /* admin@gmail.com */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -433,7 +451,9 @@ class _SideNavWidgetState extends State<SideNavWidget> {
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Text(
-                                        'View Profile',
+                                        FFLocalizations.of(context).getText(
+                                          'rf2n9m9m' /* View Profile */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(

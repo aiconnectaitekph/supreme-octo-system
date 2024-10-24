@@ -88,6 +88,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
@@ -117,7 +118,15 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        Navigator.pop(context);
+                        context.pushNamed(
+                          'Login',
+                          extra: <String, dynamic>{
+                            kTransitionInfoKey: const TransitionInfo(
+                              hasTransition: true,
+                              transitionType: PageTransitionType.fade,
+                            ),
+                          },
+                        );
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
@@ -141,7 +150,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
           child: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(
+                color: FlutterFlowTheme.of(context).primaryBackground,
+              ),
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 12.0),
                 child: SingleChildScrollView(
@@ -167,7 +178,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(24.0),
                                 child: Image.asset(
-                                  'assets/images/24eecdb6-aeb8-4ea9-9246-4e45116dc86a.jpeg',
+                                  'assets/images/Screenshot_from_2024-10-23_12-59-48.png',
                                   width: MediaQuery.sizeOf(context).width * 1.0,
                                   height: 200.0,
                                   fit: BoxFit.cover,
@@ -219,7 +230,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           autofocus: false,
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            hintText: 'Job Title and Keyword',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'ni7z9ncj' /* Job Title and Keyword */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -286,7 +301,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           autofocus: false,
                                           obscureText: false,
                                           decoration: InputDecoration(
-                                            hintText: 'Location',
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'xbd582cz' /* Location */,
+                                            ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -405,7 +424,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Text(
-                                              'Popular Searches',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'rzxsbge0' /* Popular Searches */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -444,7 +466,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Fullstack',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '5golomjp' /* Fullstack */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -490,7 +516,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Software',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'hlbv5yo4' /* Software */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -536,7 +566,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Singer',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'n5bylpag' /* Singer */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -582,7 +616,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Co-Pilot',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'n2g5qogh' /* Co-Pilot */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -639,7 +677,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Engineer',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '30xju67h' /* Engineer */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -685,7 +727,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Flutter Developer',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'dkovg2l0' /* Flutter Developer */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -731,7 +777,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 onPressed: () {
                                                   print('Button pressed ...');
                                                 },
-                                                text: 'Fullstack Dev',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'o0hji1kk' /* Fullstack Dev */,
+                                                ),
                                                 options: FFButtonOptions(
                                                   height: 32.0,
                                                   padding: const EdgeInsetsDirectional
@@ -786,7 +836,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'jwnxouu4' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -831,7 +884,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Crew',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'hheb12zi' /* Crew */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -876,7 +932,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                't0drujtg' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -921,7 +980,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               onPressed: () {
                                                 print('Button pressed ...');
                                               },
-                                              text: 'Fullstack',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'ad1lctux' /* Fullstack */,
+                                              ),
                                               options: FFButtonOptions(
                                                 height: 32.0,
                                                 padding: const EdgeInsetsDirectional
@@ -979,7 +1041,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           Expanded(
                             child: SizedBox(
                               width: double.infinity,
-                              height: 281.0,
+                              height: 290.0,
                               child: Stack(
                                 children: [
                                   Padding(
@@ -1003,20 +1065,43 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         .primaryText,
                                               ),
                                             ),
-                                            child: ClipRRect(
-                                              child: Container(
-                                                decoration: const BoxDecoration(),
-                                                child: ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
-                                                  child: Image.network(
-                                                    'https://picsum.photos/seed/864/600',
-                                                    width: 200.0,
-                                                    height: 200.0,
-                                                    fit: BoxFit.cover,
+                                            child: SingleChildScrollView(
+                                              scrollDirection: Axis.horizontal,
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            24.0),
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(24.0),
+                                                      ),
+                                                      child: ClipRRect(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(24.0),
+                                                        child: Image.network(
+                                                          'https://picsum.photos/seed/864/600',
+                                                          width:
+                                                              MediaQuery.sizeOf(
+                                                                          context)
+                                                                      .width *
+                                                                  1.0,
+                                                          height:
+                                                              MediaQuery.sizeOf(
+                                                                          context)
+                                                                      .height *
+                                                                  1.0,
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
                                                   ),
-                                                ),
+                                                ],
                                               ),
                                             ),
                                           ),

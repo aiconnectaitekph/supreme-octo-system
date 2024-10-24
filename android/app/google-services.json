@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "869053244601",
+    "firebase_url": "https://explore-malaysia-6d28d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "explore-malaysia-6d28d",
+    "storage_bucket": "explore-malaysia-6d28d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869053244601:android:5393cb2f858424f30be768",
+        "android_client_info": {
+          "package_name": "com.explorejob.my"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869053244601-oj7ij22cuj52kgh2k4qba0decraiuqba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.explorejob.my",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "869053244601-45cc94b5o7bjpindj5klnfb5i4vs412b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOZWPPSWerLptDKxqPThcDLrZd9YTEh-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102386046261367412554",
+              "client_type": 3
+            },
+            {
+              "client_id": "869053244601-hl9rpnqtsnaguintg38kicrcc4ko4lng.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.explorejobs.malaysia"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869053244601:android:33446f1b3cfe45a30be768",
+        "android_client_info": {
+          "package_name": "com.explorejobs.malaysia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869053244601-qbpkd3bbog8qd8p745cimu1hp56a5ija.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.explorejobs.malaysia",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "869053244601-45cc94b5o7bjpindj5klnfb5i4vs412b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOZWPPSWerLptDKxqPThcDLrZd9YTEh-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102386046261367412554",
+              "client_type": 3
+            },
+            {
+              "client_id": "869053244601-hl9rpnqtsnaguintg38kicrcc4ko4lng.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.explorejobs.malaysia"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869053244601:android:5ee0200727b756750be768",
+        "android_client_info": {
+          "package_name": "com.explorejobsmy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869053244601-2ucdbhk5p226604s0r9u4k9l1mig2b0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.explorejobsmy.app",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "869053244601-45cc94b5o7bjpindj5klnfb5i4vs412b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOZWPPSWerLptDKxqPThcDLrZd9YTEh-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102386046261367412554",
+              "client_type": 3
+            },
+            {
+              "client_id": "869053244601-hl9rpnqtsnaguintg38kicrcc4ko4lng.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.explorejobs.malaysia"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869053244601:android:c8833cb33a6ef62e0be768",
+        "android_client_info": {
+          "package_name": "com.exploremalaysia.job"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869053244601-jfuoodlrovjkh7m4pisp3a6kr0l0ks9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exploremalaysia.job",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "869053244601-45cc94b5o7bjpindj5klnfb5i4vs412b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOZWPPSWerLptDKxqPThcDLrZd9YTEh-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102386046261367412554",
+              "client_type": 3
+            },
+            {
+              "client_id": "869053244601-hl9rpnqtsnaguintg38kicrcc4ko4lng.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.explorejobs.malaysia"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
