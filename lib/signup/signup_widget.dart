@@ -679,8 +679,8 @@ class _SignupWidgetState extends State<SignupWidget>
                                     ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   FFButtonWidget(
-                                    onPressed: () {
-                                      print('Button pressed ...');
+                                    onPressed: () async {
+                                      context.pushNamed('Dashboard');
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'mkycdojh' /* Continue */,

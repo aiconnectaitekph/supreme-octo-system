@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import '/backend/sqlite/sqlite_manager.dart';
 import 'backend/firebase/firebase_config.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
@@ -16,8 +15,6 @@ void main() async {
   usePathUrlStrategy();
 
   await initFirebase();
-
-  await SQLiteManager.initialize();
 
   await FFLocalizations.initialize();
 
@@ -134,6 +131,7 @@ class _NavBarPageState extends State<NavBarPage> {
       'Search': const SearchWidget(),
       'Category': const CategoryWidget(),
       'Settings': const SettingsWidget(),
+      'Dashboard': const DashboardWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -189,6 +187,16 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             label: FFLocalizations.of(context).getText(
               'eenlus7r' /* Home */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(
+              Icons.person,
+              size: 24.0,
+            ),
+            label: FFLocalizations.of(context).getText(
+              'nc4pkbdd' /* Dashboard */,
             ),
             tooltip: '',
           )

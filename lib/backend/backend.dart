@@ -3,7 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'schema/util/firestore_util.dart';
 
 import 'schema/users_record.dart';
-import 'schema/jobs_record.dart';
+import 'schema/explorejobs_record.dart';
+import 'schema/job_category_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -13,7 +14,8 @@ export 'schema/util/firestore_util.dart';
 export 'schema/util/schema_util.dart';
 
 export 'schema/users_record.dart';
-export 'schema/jobs_record.dart';
+export 'schema/explorejobs_record.dart';
+export 'schema/job_category_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -52,38 +54,75 @@ Future<List<UsersRecord>> queryUsersRecordOnce({
       singleRecord: singleRecord,
     );
 
-/// Functions to query JobsRecords (as a Stream and as a Future).
-Future<int> queryJobsRecordCount({
+/// Functions to query ExplorejobsRecords (as a Stream and as a Future).
+Future<int> queryExplorejobsRecordCount({
   Query Function(Query)? queryBuilder,
   int limit = -1,
 }) =>
     queryCollectionCount(
-      JobsRecord.collection,
+      ExplorejobsRecord.collection,
       queryBuilder: queryBuilder,
       limit: limit,
     );
 
-Stream<List<JobsRecord>> queryJobsRecord({
+Stream<List<ExplorejobsRecord>> queryExplorejobsRecord({
   Query Function(Query)? queryBuilder,
   int limit = -1,
   bool singleRecord = false,
 }) =>
     queryCollection(
-      JobsRecord.collection,
-      JobsRecord.fromSnapshot,
+      ExplorejobsRecord.collection,
+      ExplorejobsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
     );
 
-Future<List<JobsRecord>> queryJobsRecordOnce({
+Future<List<ExplorejobsRecord>> queryExplorejobsRecordOnce({
   Query Function(Query)? queryBuilder,
   int limit = -1,
   bool singleRecord = false,
 }) =>
     queryCollectionOnce(
-      JobsRecord.collection,
-      JobsRecord.fromSnapshot,
+      ExplorejobsRecord.collection,
+      ExplorejobsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query JobCategoryRecords (as a Stream and as a Future).
+Future<int> queryJobCategoryRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      JobCategoryRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<JobCategoryRecord>> queryJobCategoryRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      JobCategoryRecord.collection,
+      JobCategoryRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<JobCategoryRecord>> queryJobCategoryRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      JobCategoryRecord.collection,
+      JobCategoryRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

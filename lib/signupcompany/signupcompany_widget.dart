@@ -604,7 +604,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                   ),
                                   FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('Home');
+                                      context.pushNamed('Dashboard');
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'vg2luoj0' /* Continue */,

@@ -913,6 +913,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // Dashboard
+  {
+    'nc4pkbdd': {
+      'en': 'Dashboard',
+      'ar': '',
+      'ms': '',
+    },
+  },
   // MainWidget
   {
     '7zldgoa8': {

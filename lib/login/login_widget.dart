@@ -327,8 +327,8 @@ class _LoginWidgetState extends State<LoginWidget>
                             ].divide(const SizedBox(height: 12.0)),
                           ),
                           FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
+                            onPressed: () async {
+                              context.pushNamed('Dashboard');
                             },
                             text: FFLocalizations.of(context).getText(
                               'u0rcn4vj' /* Continue */,
