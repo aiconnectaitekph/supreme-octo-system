@@ -127,6 +127,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'Dashboard')
               : const DashboardWidget(),
+        ),
+        FFRoute(
+          name: 'info',
+          path: '/info',
+          builder: (context, params) => const InfoWidget(),
+        ),
+        FFRoute(
+          name: 'VoiceAI',
+          path: '/voiceAI',
+          builder: (context, params) => const VoiceAIWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

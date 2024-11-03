@@ -10,3 +10,5 @@ export '/signup/signup_widget.dart' show SignupWidget;
 export '/signupcompany/signupcompany_widget.dart' show SignupcompanyWidget;
 export '/forgopassword/forgopassword_widget.dart' show ForgopasswordWidget;
 export '/dashboard/dashboard_widget.dart' show DashboardWidget;
+export '/info/info_widget.dart' show InfoWidget;
+export '/voice_a_i/voice_a_i_widget.dart' show VoiceAIWidget;

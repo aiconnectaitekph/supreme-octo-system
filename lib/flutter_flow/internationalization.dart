@@ -197,6 +197,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': '',
       'ms': '',
     },
+    'v77g5x93': {
+      'en': 'Maidstone, San Antonio, Tx.',
+      'ar': '',
+      'ms': '',
+    },
+    '002h7yco': {
+      'en': '32 miles away',
+      'ar': '',
+      'ms': '',
+    },
+    '3at0fv4b': {
+      'en': '4.25',
+      'ar': '',
+      'ms': '',
+    },
     'bp9qhsay': {
       'en': 'Home',
       'ar': '',
@@ -921,6 +936,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // VoiceAI
+  {
+    'jst3zntk': {
+      'en': 'Home',
+      'ar': '',
+      'ms': '',
+    },
+  },
   // MainWidget
   {
     '7zldgoa8': {
@@ -1355,6 +1378,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'mbmyx6th': {
       'en': 'Get new password',
+      'ar': '',
+      'ms': '',
+    },
+  },
+  // VoiceAssistant
+  {
+    'fp8dfcgv': {
+      'en': 'Swipe up to record',
       'ar': '',
       'ms': '',
     },
