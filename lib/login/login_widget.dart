@@ -3,9 +3,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'login_model.dart';
 export 'login_model.dart';
 
@@ -43,8 +46,8 @@ class _LoginWidgetState extends State<LoginWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 0.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 0.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -72,7 +75,7 @@ class _LoginWidgetState extends State<LoginWidget>
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Material(
                   color: Colors.transparent,
                   elevation: 12.0,
@@ -86,11 +89,11 @@ class _LoginWidgetState extends State<LoginWidget>
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       borderRadius: BorderRadius.circular(24.0),
                       border: Border.all(
-                        color: const Color(0x3939D2C0),
+                        color: Color(0x3939D2C0),
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
@@ -190,21 +193,21 @@ class _LoginWidgetState extends State<LoginWidget>
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -213,7 +216,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   filled: true,
                                   fillColor: FlutterFlowTheme.of(context)
                                       .primaryBackground,
-                                  suffixIcon: const Icon(
+                                  suffixIcon: Icon(
                                     Icons.mail_outline,
                                   ),
                                 ),
@@ -273,21 +276,21 @@ class _LoginWidgetState extends State<LoginWidget>
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
+                                    borderSide: BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -324,7 +327,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                 validator: _model.textController2Validator
                                     .asValidator(context),
                               ),
-                            ].divide(const SizedBox(height: 12.0)),
+                            ].divide(SizedBox(height: 12.0)),
                           ),
                           FFButtonWidget(
                             onPressed: () async {
@@ -336,9 +339,9 @@ class _LoginWidgetState extends State<LoginWidget>
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 53.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -366,7 +369,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               context.pushNamed(
                                 'Forgopassword',
                                 extra: <String, dynamic>{
-                                  kTransitionInfoKey: const TransitionInfo(
+                                  kTransitionInfoKey: TransitionInfo(
                                     hasTransition: true,
                                     transitionType: PageTransitionType.fade,
                                   ),
@@ -408,7 +411,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               context.pushNamed('Signup');
                             },
                             child: Container(
-                              decoration: const BoxDecoration(),
+                              decoration: BoxDecoration(),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -457,7 +460,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               ),
                             ),
                           ),
-                        ].divide(const SizedBox(height: 16.0)),
+                        ].divide(SizedBox(height: 16.0)),
                       ),
                     ),
                   ),

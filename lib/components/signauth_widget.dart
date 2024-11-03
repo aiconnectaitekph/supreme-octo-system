@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'signauth_model.dart';
 export 'signauth_model.dart';
 
@@ -53,14 +54,14 @@ class _SignauthWidgetState extends State<SignauthWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -168,21 +169,21 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   errorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
@@ -222,21 +223,21 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   errorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
@@ -276,28 +277,28 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   errorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   filled: true,
-                  suffixIcon: const Icon(
+                  suffixIcon: Icon(
                     Icons.email,
                   ),
                 ),
@@ -333,28 +334,28 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   errorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
+                    borderSide: BorderSide(
                       color: Color(0x00000000),
                       width: 1.0,
                     ),
                     borderRadius: BorderRadius.circular(24.0),
                   ),
                   filled: true,
-                  suffixIcon: const Icon(
+                  suffixIcon: Icon(
                     Icons.visibility,
                   ),
                 ),
@@ -372,7 +373,7 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                 children: [
                   Theme(
                     data: ThemeData(
-                      checkboxTheme: const CheckboxThemeData(
+                      checkboxTheme: CheckboxThemeData(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
@@ -425,7 +426,7 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                               FlutterFlowTheme.of(context).bodySmallFamily),
                         ),
                   ),
-                ].divide(const SizedBox(width: 8.0)),
+                ].divide(SizedBox(width: 8.0)),
               ),
               FFButtonWidget(
                 onPressed: () {
@@ -437,9 +438,9 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                 options: FFButtonOptions(
                   width: double.infinity,
                   height: 50.0,
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleMedium.override(
                         fontFamily:
@@ -486,7 +487,7 @@ class _SignauthWidgetState extends State<SignauthWidget> {
                   ),
                 ],
               ),
-            ].divide(const SizedBox(height: 16.0)),
+            ].divide(SizedBox(height: 16.0)),
           ),
         ),
       ),

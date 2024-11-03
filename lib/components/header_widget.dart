@@ -3,6 +3,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'header_model.dart';
 export 'header_model.dart';
 
@@ -43,7 +45,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(12.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,7 +56,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  decoration: const BoxDecoration(),
+                  decoration: BoxDecoration(),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(

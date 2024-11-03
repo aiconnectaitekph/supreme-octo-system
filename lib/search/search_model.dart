@@ -1,9 +1,14 @@
 import '/backend/api_requests/api_calls.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:async';
 import 'search_widget.dart' show SearchWidget;
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
+import 'package:provider/provider.dart';
 
 class SearchModel extends FlutterFlowModel<SearchWidget> {
   ///  State fields for stateful widgets in this page.
@@ -62,11 +67,11 @@ class SearchModel extends FlutterFlowModel<SearchWidget> {
                   listViewGetJobResponse.jsonBody,
                 )! ??
                 [])
-            .toList();
+            .toList() as List;
         final newNumItems = nextPageMarker.numItems + pageItems.length;
         listViewPagingController?.appendPage(
           pageItems,
-          (pageItems.isNotEmpty)
+          (pageItems.length > 0)
               ? ApiPagingParams(
                   nextPageNumber: nextPageMarker.nextPageNumber + 1,
                   numItems: newNumItems,
@@ -82,7 +87,7 @@ class SearchModel extends FlutterFlowModel<SearchWidget> {
   }) async {
     final stopwatch = Stopwatch()..start();
     while (true) {
-      await Future.delayed(const Duration(milliseconds: 50));
+      await Future.delayed(Duration(milliseconds: 50));
       final timeElapsed = stopwatch.elapsedMilliseconds;
       final requestComplete =
           (listViewPagingController?.nextPageKey?.nextPageNumber ?? 0) > 0;

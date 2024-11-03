@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'categogry_list_model.dart';
 export 'categogry_list_model.dart';
 
@@ -87,7 +88,7 @@ class _CategogryListWidgetState extends State<CategogryListWidget> {
                           FlutterFlowTheme.of(context).bodySmallFamily),
                     ),
               ),
-            ].divide(const SizedBox(height: 8.0)),
+            ].divide(SizedBox(height: 8.0)),
           ),
         ),
         Row(
@@ -139,9 +140,9 @@ class _CategogryListWidgetState extends State<CategogryListWidget> {
               color: FlutterFlowTheme.of(context).secondaryText,
               size: 8.0,
             ),
-          ].divide(const SizedBox(width: 8.0)),
+          ].divide(SizedBox(width: 8.0)),
         ),
-      ].divide(const SizedBox(height: 16.0)),
+      ].divide(SizedBox(height: 16.0)),
     );
   }
 }

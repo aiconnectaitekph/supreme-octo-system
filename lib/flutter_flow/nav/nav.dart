@@ -1,12 +1,18 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
+import '/backend/backend.dart';
 
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -44,7 +50,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : const NavBarPage(),
+          : NavBarPage(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -62,81 +68,81 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : const NavBarPage(),
+              : NavBarPage(),
         ),
         FFRoute(
           name: 'Search',
           path: '/search',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Search')
-              : const SearchWidget(),
+              ? NavBarPage(initialPage: 'Search')
+              : SearchWidget(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
           builder: (context, params) =>
-              params.isEmpty ? const NavBarPage(initialPage: 'Home') : const HomeWidget(),
+              params.isEmpty ? NavBarPage(initialPage: 'Home') : HomeWidget(),
         ),
         FFRoute(
           name: 'Settings',
           path: '/settings',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Settings')
-              : const SettingsWidget(),
+              ? NavBarPage(initialPage: 'Settings')
+              : SettingsWidget(),
         ),
         FFRoute(
           name: 'Category',
           path: '/category',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Category')
-              : const CategoryWidget(),
+              ? NavBarPage(initialPage: 'Category')
+              : CategoryWidget(),
         ),
         FFRoute(
           name: 'HomeSidebar',
           path: '/homeSidebar',
-          builder: (context, params) => const HomeSidebarWidget(),
+          builder: (context, params) => HomeSidebarWidget(),
         ),
         FFRoute(
           name: 'HomeDash',
           path: '/homeDash',
-          builder: (context, params) => const HomeDashWidget(),
+          builder: (context, params) => HomeDashWidget(),
         ),
         FFRoute(
           name: 'Login',
           path: '/login',
-          builder: (context, params) => const LoginWidget(),
+          builder: (context, params) => LoginWidget(),
         ),
         FFRoute(
           name: 'Signup',
           path: '/signup',
-          builder: (context, params) => const SignupWidget(),
+          builder: (context, params) => SignupWidget(),
         ),
         FFRoute(
           name: 'Signupcompany',
           path: '/signupcompany',
-          builder: (context, params) => const SignupcompanyWidget(),
+          builder: (context, params) => SignupcompanyWidget(),
         ),
         FFRoute(
           name: 'Forgopassword',
           path: '/forgopassword',
-          builder: (context, params) => const ForgopasswordWidget(),
+          builder: (context, params) => ForgopasswordWidget(),
         ),
         FFRoute(
           name: 'Dashboard',
           path: '/dashboard',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Dashboard')
-              : const DashboardWidget(),
+              ? NavBarPage(initialPage: 'Dashboard')
+              : DashboardWidget(),
         ),
         FFRoute(
           name: 'info',
           path: '/info',
-          builder: (context, params) => const InfoWidget(),
+          builder: (context, params) => InfoWidget(),
         ),
         FFRoute(
           name: 'VoiceAI',
           path: '/voiceAI',
-          builder: (context, params) => const VoiceAIWidget(),
+          builder: (context, params) => VoiceAIWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -302,7 +308,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

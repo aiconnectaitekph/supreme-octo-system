@@ -1,8 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:provider/provider.dart';
 import 'voice_a_i_model.dart';
 export 'voice_a_i_model.dart';
 
@@ -60,7 +63,7 @@ class _VoiceAIWidgetState extends State<VoiceAIWidget> {
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 25.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 25.0),
                   child: Container(
                     width: double.infinity,
                     height: double.infinity,
@@ -68,7 +71,7 @@ class _VoiceAIWidgetState extends State<VoiceAIWidget> {
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -81,7 +84,7 @@ class _VoiceAIWidgetState extends State<VoiceAIWidget> {
                           ),
                           Container(
                             width: MediaQuery.sizeOf(context).width * 0.759,
-                            decoration: const BoxDecoration(),
+                            decoration: BoxDecoration(),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.network(
@@ -92,7 +95,7 @@ class _VoiceAIWidgetState extends State<VoiceAIWidget> {
                               ),
                             ),
                           ),
-                        ].divide(const SizedBox(height: 40.0)),
+                        ].divide(SizedBox(height: 40.0)),
                       ),
                     ),
                   ),

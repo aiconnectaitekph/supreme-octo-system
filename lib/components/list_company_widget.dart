@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'list_company_model.dart';
 export 'list_company_model.dart';
 
@@ -37,7 +38,7 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
       child: Material(
         color: Colors.transparent,
         elevation: 2.0,
@@ -54,7 +55,7 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(16.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +81,7 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(const SizedBox(width: 8.0)),
+                  ].divide(SizedBox(width: 8.0)),
                 ),
                 Divider(
                   thickness: 1.0,
@@ -132,7 +133,7 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(const SizedBox(width: 16.0)),
+                  ].divide(SizedBox(width: 16.0)),
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
@@ -174,7 +175,7 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(14.0),
                           border: Border.all(
-                            color: const Color(0x7E482136),
+                            color: Color(0x7E482136),
                           ),
                         ),
                         child: ClipRRect(
@@ -188,9 +189,9 @@ class _ListCompanyWidgetState extends State<ListCompanyWidget> {
                         ),
                       ),
                     ),
-                  ].divide(const SizedBox(width: 8.0)),
+                  ].divide(SizedBox(width: 8.0)),
                 ),
-              ].divide(const SizedBox(height: 8.0)),
+              ].divide(SizedBox(height: 8.0)),
             ),
           ),
         ),

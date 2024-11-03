@@ -1,6 +1,9 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'info_model.dart';
 export 'info_model.dart';
 
@@ -39,7 +42,7 @@ class _InfoWidgetState extends State<InfoWidget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
           automaticallyImplyLeading: false,
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 0.0,
         ),
