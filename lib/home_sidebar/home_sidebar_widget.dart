@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_sidebar_model.dart';
 export 'home_sidebar_model.dart';
 
@@ -56,9 +55,9 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
             Container(
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: 50.0,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -83,7 +82,7 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                         context.pushNamed(
                           'HomeSidebar',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                             ),
@@ -101,10 +100,10 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -161,7 +160,7 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 16.0),
                               child: Container(
                                 decoration: BoxDecoration(
@@ -174,7 +173,7 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 16.0, 16.0, 16.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -245,7 +244,7 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -318,14 +317,14 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                       FFButtonWidget(
                                         onPressed: () {
                                           print('Button pressed ...');
                                         },
                                         text: '',
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.search_sharp,
                                           size: 28.0,
                                         ),
@@ -333,12 +332,12 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                           width: double.infinity,
                                           height: 50.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF525017),
+                                          color: const Color(0xFF525017),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall
@@ -360,13 +359,13 @@ class _HomeSidebarWidgetState extends State<HomeSidebarWidget> {
                                               BorderRadius.circular(24.0),
                                         ),
                                       ),
-                                    ].divide(SizedBox(height: 16.0)),
+                                    ].divide(const SizedBox(height: 16.0)),
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 16.0, 0.0, 16.0),
                               child: Container(
                                 decoration: BoxDecoration(

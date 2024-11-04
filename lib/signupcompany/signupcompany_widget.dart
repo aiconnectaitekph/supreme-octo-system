@@ -3,12 +3,9 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'signupcompany_model.dart';
 export 'signupcompany_model.dart';
 
@@ -49,8 +46,8 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -74,7 +71,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: SingleChildScrollView(
               primary: false,
               child: Column(
@@ -84,7 +81,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Material(
                       color: Colors.transparent,
                       elevation: 10.0,
@@ -101,11 +98,11 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                 .secondaryBackground,
                             borderRadius: BorderRadius.circular(24.0),
                             border: Border.all(
-                              color: Color(0x72249689),
+                              color: const Color(0x72249689),
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 24.0),
                             child: SingleChildScrollView(
                               child: Column(
@@ -121,7 +118,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                         CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -176,7 +173,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                     ],
                                   ),
                                   Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -192,7 +189,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                               'Signup',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -207,7 +204,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryBackground,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 bottomLeft:
                                                     Radius.circular(24.0),
                                                 bottomRight:
@@ -216,11 +213,11 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                                 topRight: Radius.circular(0.0),
                                               ),
                                               border: Border.all(
-                                                color: Color(0x2D482136),
+                                                color: const Color(0x2D482136),
                                               ),
                                             ),
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
@@ -256,7 +253,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight:
                                                   Radius.circular(23.0),
@@ -270,7 +267,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             ),
                                           ),
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'mbld9kzv' /* I am company */,
@@ -331,7 +328,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -339,7 +336,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -347,7 +344,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -403,7 +400,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -411,7 +408,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -419,7 +416,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -427,7 +424,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      suffixIcon: const Icon(
                                         Icons.email,
                                       ),
                                     ),
@@ -478,7 +475,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -486,7 +483,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -494,7 +491,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -502,7 +499,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                             BorderRadius.circular(24.0),
                                       ),
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      suffixIcon: const Icon(
                                         Icons.visibility,
                                       ),
                                     ),
@@ -603,7 +600,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                                               .bodySmallFamily),
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   FFButtonWidget(
                                     onPressed: () async {
@@ -615,10 +612,10 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 52.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -641,7 +638,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -651,10 +648,10 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                         context.pushNamed('Login');
                                       },
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 18.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -690,7 +687,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                                         ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         2.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -729,7 +726,7 @@ class _SignupcompanyWidgetState extends State<SignupcompanyWidget>
                                       ),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),

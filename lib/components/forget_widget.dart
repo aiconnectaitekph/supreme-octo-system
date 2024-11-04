@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'forget_model.dart';
 export 'forget_model.dart';
 
@@ -44,7 +43,7 @@ class _ForgetWidgetState extends State<ForgetWidget> {
   Widget build(BuildContext context) {
     return Container(
       child: Align(
-        alignment: AlignmentDirectional(0.0, 0.0),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Container(
           width: 300.0,
           decoration: BoxDecoration(
@@ -52,7 +51,7 @@ class _ForgetWidgetState extends State<ForgetWidget> {
             borderRadius: BorderRadius.circular(12.0),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -132,21 +131,21 @@ class _ForgetWidgetState extends State<ForgetWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0x00000000),
                         width: 1.0,
                       ),
@@ -154,7 +153,7 @@ class _ForgetWidgetState extends State<ForgetWidget> {
                     ),
                     filled: true,
                     fillColor: FlutterFlowTheme.of(context).primaryBackground,
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.mail_outline,
                     ),
                   ),
@@ -179,9 +178,9 @@ class _ForgetWidgetState extends State<ForgetWidget> {
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 44.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily:
@@ -195,7 +194,7 @@ class _ForgetWidgetState extends State<ForgetWidget> {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
-              ].divide(SizedBox(height: 16.0)),
+              ].divide(const SizedBox(height: 16.0)),
             ),
           ),
         ),

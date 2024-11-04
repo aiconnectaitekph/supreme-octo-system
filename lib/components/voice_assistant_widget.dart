@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'voice_assistant_model.dart';
 export 'voice_assistant_model.dart';
 
@@ -40,22 +39,22 @@ class _VoiceAssistantWidgetState extends State<VoiceAssistantWidget> {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xFFF57C00),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.mic,
               color: Colors.white,
               size: 80.0,
             ),
-            Icon(
+            const Icon(
               Icons.graphic_eq,
               color: Colors.white,
               size: 60.0,
@@ -73,7 +72,7 @@ class _VoiceAssistantWidgetState extends State<VoiceAssistantWidget> {
                         FlutterFlowTheme.of(context).labelMediumFamily),
                   ),
             ),
-          ].divide(SizedBox(height: 40.0)),
+          ].divide(const SizedBox(height: 40.0)),
         ),
       ),
     );

@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'lay_model.dart';
 export 'lay_model.dart';
 
@@ -41,11 +40,11 @@ class _LayWidgetState extends State<LayWidget> {
       width: double.infinity,
       height: 200.0,
       decoration: BoxDecoration(
-        color: Color(0xFF4B4B2F),
+        color: const Color(0xFF4B4B2F),
         borderRadius: BorderRadius.circular(24.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +79,7 @@ class _LayWidgetState extends State<LayWidget> {
                         FlutterFlowTheme.of(context).bodyMediumFamily),
                   ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

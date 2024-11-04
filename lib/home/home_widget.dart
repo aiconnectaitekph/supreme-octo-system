@@ -5,12 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_model.dart';
 export 'home_model.dart';
 
@@ -47,8 +44,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1230.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -59,8 +56,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1320.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -88,9 +85,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             Container(
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: 50.0,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -113,7 +110,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         context.pushNamed(
                           'Login',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.fade,
                             ),
@@ -140,13 +137,13 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 12.0),
                 child: SingleChildScrollView(
                   primary: false,
                   child: Column(
@@ -165,7 +162,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(24.0),
                             border: Border.all(
-                              color: Color(0x8339D2C0),
+                              color: const Color(0x8339D2C0),
                             ),
                           ),
                           child: ClipRRect(
@@ -181,9 +178,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 16.0),
                           child: Container(
                             decoration: BoxDecoration(
@@ -195,7 +192,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -262,7 +259,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               .asValidator(context),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -332,26 +329,26 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               .asValidator(context),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   FFButtonWidget(
                                     onPressed: () {
                                       print('Button pressed ...');
                                     },
                                     text: '',
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.search_sharp,
                                       size: 28.0,
                                     ),
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF525017),
+                                      color: const Color(0xFF525017),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -374,7 +371,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               .primaryBackground,
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
@@ -387,7 +384,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           borderRadius: BorderRadius.circular(24.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: FutureBuilder<ApiCallResponse>(
                             future: GetJobCategoryCall.call(),
@@ -434,7 +431,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                   iconColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   iconSize: 12.0,
-                                  labelPadding: EdgeInsetsDirectional.fromSTEB(
+                                  labelPadding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 4.0, 12.0, 4.0),
                                   elevation: 8.0,
                                   borderRadius: BorderRadius.circular(24.0),
@@ -455,7 +452,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           Shadow(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                            offset: Offset(2.0, 2.0),
+                                            offset: const Offset(2.0, 2.0),
                                             blurRadius: 2.0,
                                           )
                                         ],
@@ -467,7 +464,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                   iconColor: FlutterFlowTheme.of(context)
                                       .primaryBackground,
                                   iconSize: 12.0,
-                                  labelPadding: EdgeInsetsDirectional.fromSTEB(
+                                  labelPadding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 4.0, 12.0, 4.0),
                                   elevation: 8.0,
                                   borderRadius: BorderRadius.circular(24.0),

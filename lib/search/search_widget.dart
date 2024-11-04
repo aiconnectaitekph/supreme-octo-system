@@ -2,12 +2,10 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-import 'package:provider/provider.dart';
 import 'search_model.dart';
 export 'search_model.dart';
 
@@ -56,9 +54,9 @@ class _SearchWidgetState extends State<SearchWidget> {
             Container(
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: 50.0,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -74,7 +72,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -84,7 +82,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                           context.pushNamed(
                             'VoiceAI',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.fade,
                               ),
@@ -108,11 +106,11 @@ class _SearchWidgetState extends State<SearchWidget> {
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
             child: Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                 child: SingleChildScrollView(
                   primary: false,
                   child: Column(
@@ -121,10 +119,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                       ),
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Material(
                           color: Colors.transparent,
                           elevation: 8.0,
@@ -141,7 +139,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
@@ -208,7 +206,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               .asValidator(context),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -278,7 +276,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                               .asValidator(context),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                   FFButtonWidget(
                                     onPressed: () {
@@ -287,19 +285,19 @@ class _SearchWidgetState extends State<SearchWidget> {
                                     text: FFLocalizations.of(context).getText(
                                       'm0ltebkw' /* Find Jobs */,
                                     ),
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.search_sharp,
                                       size: 28.0,
                                     ),
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF525017),
+                                      color: const Color(0xFF525017),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -317,16 +315,16 @@ class _SearchWidgetState extends State<SearchWidget> {
                                       borderRadius: BorderRadius.circular(24.0),
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 16.0)),
+                                ].divide(const SizedBox(height: 16.0)),
                               ),
                             ),
                           ),
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 24.0, 0.0, 0.0),
                           child: Material(
                             color: Colors.transparent,
@@ -347,7 +345,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -388,15 +386,15 @@ class _SearchWidgetState extends State<SearchWidget> {
                         ),
                       ),
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 16.0),
                                 child: Material(
                                   color: Colors.transparent,
@@ -416,7 +414,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
                                         crossAxisAlignment:
@@ -457,7 +455,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                       .bodyMediumFamily),
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
                                           Divider(
                                             thickness: 1.0,
@@ -542,7 +540,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                                       .bodyMediumFamily),
                                                         ),
                                               ),
-                                            ].divide(SizedBox(width: 16.0)),
+                                            ].divide(const SizedBox(width: 16.0)),
                                           ),
                                           Text(
                                             FFLocalizations.of(context).getText(
@@ -610,7 +608,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                         BorderRadius.circular(
                                                             14.0),
                                                     border: Border.all(
-                                                      color: Color(0x7E482136),
+                                                      color: const Color(0x7E482136),
                                                     ),
                                                   ),
                                                   child: ClipRRect(
@@ -626,9 +624,9 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 ),
                                               ),
-                                            ].divide(SizedBox(width: 8.0)),
+                                            ].divide(const SizedBox(width: 8.0)),
                                           ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                        ].divide(const SizedBox(height: 8.0)),
                                       ),
                                     ),
                                   ),
@@ -640,9 +638,9 @@ class _SearchWidgetState extends State<SearchWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: SingleChildScrollView(
                             primary: false,
                             child: Column(
@@ -714,7 +712,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -739,7 +737,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                               24.0),
                                                       border: Border.all(
                                                         color:
-                                                            Color(0xFF17171D),
+                                                            const Color(0xFF17171D),
                                                       ),
                                                     ),
                                                     child: Column(
@@ -748,7 +746,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       children: [
                                                         Container(
                                                           decoration:
-                                                              BoxDecoration(),
+                                                              const BoxDecoration(),
                                                           child: ClipRRect(
                                                             borderRadius:
                                                                 BorderRadius
@@ -772,7 +770,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 4.0),
                                                   child: Row(
@@ -809,7 +807,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 4.0),
                                                   child: Row(
@@ -845,7 +843,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     4.0,
