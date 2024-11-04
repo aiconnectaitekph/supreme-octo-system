@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 
 import '/index.dart';
 import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 export 'package:go_router/go_router.dart';
@@ -34,7 +33,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       errorBuilder: (context, state) => appStateNotifier.showSplashImage
           ? Builder(
               builder: (context) => Container(
-                color: FlutterFlowTheme.of(context).primaryBackground,
+                color: Colors.white,
                 child: Center(
                   child: Image.asset(
                     'assets/images/2-e1721133965145.png',
@@ -52,7 +51,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, _) => appStateNotifier.showSplashImage
               ? Builder(
                   builder: (context) => Container(
-                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    color: Colors.white,
                     child: Center(
                       child: Image.asset(
                         'assets/images/2-e1721133965145.png',
